@@ -1,6 +1,6 @@
 # Oxford RSE Unit Conversion
 
-[![Unittest](https://github.com/OxfordRSE/oxrse_unit_conv/actions/workflows/unittest.yml/badge.svg)](https://github.com/OxfordRSE/oxrse_unit_conv/actions/workflows/unittest.yml)
+[![Unittest](https://github.com/tedinburgh/oxrse_unit_conv/actions/workflows/unittest.yml/badge.svg)](https://github.com/tedinburgh/oxrse_unit_conv/actions/workflows/unittest.yml)
 
 ## Overview
 
