@@ -1,6 +1,6 @@
 import unittest
 from oxrse_unit_conv.meta import classes
-from oxrse_unit_conv.units import kilometer, m, m2, m3, s, hour
+from oxrse_unit_conv.units import kilometer, m, m2, m3, s, hour, mile
 
 
 class TestConversionCore(unittest.TestCase):
@@ -13,6 +13,10 @@ class TestConversionCore(unittest.TestCase):
 
     def test_converting_from_si(self):
         self.assertEqual(m.to_unit(1_000, kilometer), 1)
+
+    def test_get_si_unit(self):
+        self.assertEqual(m.get_si_unit(), "meter")
+        self.assertEqual(mile.get_si_unit(), "meter")
 
     def test_exponented_conversion(self):
         km2 = classes.Unit(

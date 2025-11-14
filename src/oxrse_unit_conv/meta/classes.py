@@ -57,6 +57,9 @@ class SIUnit(BaseUnit):
 
         return target_unit.from_si(number)
 
+    def get_si_unit(self) -> str:
+        return self.name
+
 
 class Unit(BaseUnit):
     """
@@ -123,6 +126,9 @@ class Unit(BaseUnit):
             ))
 
         return target_unit.from_si(as_si)
+
+    def get_si_unit(self) -> str:
+        return self.si_unit.name
 
 
 def simplify_dimensions(units: List[Union[Unit, SIUnit]]) -> List[Union[Unit, SIUnit]]:
